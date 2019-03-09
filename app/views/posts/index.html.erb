@@ -9,7 +9,7 @@
       let id = $(this).data("id");
       $.get("/posts/" + id + "/body", function(data) {
         // Replace text of body-id div
-        $("post-" + id).text(data);
+        $("body-" + id).text(data);
       });
     });
   });
